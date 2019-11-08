@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage{tikz-qtree,textcomp,gensymb,amssymb,pdflscape}
+\usepackage[margin=0.5in]{geometry}
+
+\begin{document}
+
+\setlength{\parindent}{0cm}
+\pagestyle{empty}
+% \resizebox{.5\linewidth}{!}{%
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 40pt}
+
+\Tree [.CP [.C$'$   [.{C\degree} {$\varnothing$\textsubscript{1}} ]
+                    [.TP    [.NP    [.{D\textsubscript{\lbrack{+N}\rbrack}} the ]
+                                    [.AP [.A$'$ [.{A\degree\textsubscript{\lbrack{+N}\rbrack}} little ] ] ]
+                                    [.N$'$ [.{N\degree\textsubscript{\lbrack3Sg\rbrack}} boy ] ] ]
+                            [.T$'$  [.{T\degree\textsubscript{\lbrack{Fin, 3Sg}\rbrack}} $\varnothing$\textsubscript{2} ]
+                                    [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Fin}\rbrack}} could ]
+                                                [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Bare}\rbrack}} be ]
+                                                            [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{ING}\rbrack}} depending ]
+                                                                        [.PP [.P$'$ [.{P\degree} on ]
+                                                                                    [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack2Pl\rbrack}} us ] ] ] ] ] ] ] ] ] ] ] ] ] ] ]
+
+\Tree [.CP [.C$'$   [.{C\degree} [.{V\degree\textsubscript{\lbrack{Fin}\rbrack}} could ] ]
+                    [.TP    [.NP    [.{D\textsubscript{\lbrack{+N}\rbrack}} the ]
+                                    [.AP [.A$'$ [.{A\degree\textsubscript{\lbrack{+N}\rbrack}} little ] ] ]
+                                    [.N$'$ [.{N\degree\textsubscript{\lbrack3Sg\rbrack}} boy ] ] ]
+                            [.T$'$  [.{T\degree\textsubscript{\lbrack{Fin, 3Sg}\rbrack}} $\varnothing$\textsubscript{2} ]
+                                    [.VP [.V$'$ .
+                                                [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Bare}\rbrack}} be ]
+                                                            [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{ING}\rbrack}} depending ]
+                                                                        [.PP [.P$'$ [.{P\degree} on ]
+                                                                                    [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack2Pl\rbrack}} us ] ] ] ] ] ] ] ] ] ] ] ] ] ] ]
+
+% }
+
+
+\end{document}

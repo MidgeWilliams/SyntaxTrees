@@ -1,0 +1,68 @@
+\documentclass{article}
+\usepackage{tikz-qtree,textcomp,gensymb,amssymb,pdflscape}
+\usepackage[margin=0.5in]{geometry}
+
+\begin{document}
+
+\setlength{\parindent}{0cm}
+\pagestyle{empty}
+\resizebox{\linewidth}{!}{%
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 40pt}
+%For part a
+%\Tree [.CP  [.C$'$  [.{C\degree\textsubscript{\lbrack{-wh}\rbrack}} {$\varnothing$\textsubscript{1}} ]
+%                    [.TP    [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack3sg\rbrack}} Sheila ] ] ]
+%                            [.T$'$  [.{T\degree\textsubscript{\lbrack{-wh, Fin, 3sg}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+%                                    [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Fin, 3sgPast}\rbrack}} had ]
+%                                                [.VP [.V$'$     [.{V\degree\textsubscript{\lbrack{EN/ED}\rbrack}} built ]
+%                                                                [.NP    [.{D\textsubscript{\lbrack{+N}\rbrack}} several ]
+%                                                                        [.AP [.A$'$ [.{A\degree\textsubscript{\lbrack{+N}\rbrack}} large ] ] ]
+%                                                                        [.N$'$ [.{N\degree\textsubscript{\lbrack3Pl\rbrack}} {book cases} ] ] ] ] ] ] ] ] ] ] ]
+
+% For hypothesis X
+% \Tree [.CP  [.Wh What ][.C$'$  [.{C\degree\textsubscript{\lbrack{+wh}\rbrack}} {$\varnothing$\textsubscript{1}} ]
+%                     [.TP    [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack3sg\rbrack}} Sheila ] ] ]
+%                             [.T$'$  [.{T\degree\textsubscript{\lbrack{+wh, Fin, 3sg}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+%                                     [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Fin, 3sgPast}\rbrack}} had ]
+%                                                 [.VP [.V$'$     [.{V\degree\textsubscript{\lbrack{EN/ED}\rbrack}} built ]
+%                                                                 [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{-D, -A}\rbrack}} {$\varnothing$\textsubscript{3}} ] ] ] ] ] ] ] ] ] ] ]
+%
+% \Tree [.CP  [.Wh What ][.C$'$  [.{C\degree\textsubscript{\lbrack{+wh}\rbrack}} [.{V\degree\textsubscript{\lbrack{Fin, 3sgPast}\rbrack}} had ] ]
+%                     [.TP    [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack3sg\rbrack}} Sheila ] ] ]
+%                             [.T$'$  [.{T\degree\textsubscript{\lbrack{+wh, Fin, 3sg}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+%                                     [.VP [.V$'$ .
+%                                                 [.VP [.V$'$     [.{V\degree\textsubscript{\lbrack{EN/ED}\rbrack}} built ]
+%                                                                 [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{-D, -A}\rbrack}} {$\varnothing$\textsubscript{3}} ] ] ] ] ] ] ] ] ] ] ]
+
+%For hypothesis Y
+\Tree [.CP  [.Wh {$\varnothing$\textsubscript{3}} ]
+            [.C$'$  [.{C\degree\textsubscript{\lbrack{-wh}\rbrack}} {$\varnothing$\textsubscript{1}} ]
+                   [.TP    [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack3sg\rbrack}} Sheila ] ] ]
+                           [.T$'$  [.{T\degree\textsubscript{\lbrack{-wh, Fin, 3sg}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                                   [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Fin, 3sgPast}\rbrack}} had ]
+                                               [.VP [.V$'$     [.{V\degree\textsubscript{\lbrack{EN/ED}\rbrack}} built ]
+                                                               [.NP    [.{D\textsubscript{\lbrack{+N}\rbrack}} several ]
+                                                                       [.AP [.A$'$ [.{A\degree\textsubscript{\lbrack{+N}\rbrack}} large ] ] ]
+                                                                       [.N$'$ [.{N\degree\textsubscript{\lbrack3Pl\rbrack}} {book cases} ] ] ] ] ] ] ] ] ] ] ]
+
+\Tree [.CP  [.Wh {$\varnothing$\textsubscript{3}} ]
+            [.C$'$  [.{C\degree\textsubscript{\lbrack{-wh}\rbrack}} [.{V\degree\textsubscript{\lbrack{Fin, 3sgPast}\rbrack}} had ] ]
+                   [.TP    [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack3sg\rbrack}} Sheila ] ] ]
+                           [.T$'$  [.{T\degree\textsubscript{\lbrack{-wh, Fin, 3sg}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                                   [.VP [.V$'$ .
+                                               [.VP [.V$'$     [.{V\degree\textsubscript{\lbrack{EN/ED}\rbrack}} built ]
+                                                               [.NP    [.{D\textsubscript{\lbrack{+N}\rbrack}} several ]
+                                                                       [.AP [.A$'$ [.{A\degree\textsubscript{\lbrack{+N}\rbrack}} large ] ] ]
+                                                                       [.N$'$ [.{N\degree\textsubscript{\lbrack3Pl\rbrack}} {book cases} ] ] ] ] ] ] ] ] ] ] ]
+
+\Tree [.CP  [.Wh What ]
+            [.C$'$  [.{C\degree\textsubscript{\lbrack{-wh}\rbrack}} [.{V\degree\textsubscript{\lbrack{Fin, 3sgPast}\rbrack}} had ] ]
+                   [.TP    [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack3sg\rbrack}} Sheila ] ] ]
+                           [.T$'$  [.{T\degree\textsubscript{\lbrack{-wh, Fin, 3sg}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                                   [.VP [.V$'$ .
+                                               [.VP [.V$'$     [.{V\degree\textsubscript{\lbrack{EN/ED}\rbrack}} built ]
+                                                               [.NP    . ] ] ] ] ] ] ] ] ]
+}
+
+
+\end{document}
