@@ -1,0 +1,175 @@
+\documentclass{article}
+\usepackage{tikz-qtree,textcomp,gensymb,amssymb,pdflscape}
+\usetikzlibrary{decorations.text}
+\usepackage[margin=0.5in]{geometry}
+\begin{document}
+%\begin{landscape}
+
+\setlength{\parindent}{0cm}
+\pagestyle{empty}
+
+% For Part Two A
+\resizebox{.5\linewidth}{!}{%
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 25pt}
+\Tree   [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{1}} ]
+                    [.TP    [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} Alex ] ] ]
+                            [.T$'$  [.{T\degree\textsubscript{\lbrack{3Sg, Fin}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                                    [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{3SgPast, Fin}\rbrack}} had ]
+                                                [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{EN/ED}\rbrack}} loved ]
+                                                            [.VP [.V$'$ [.{V\degree} to ]
+                                                                        [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Bare}\rbrack}} wear ]
+                                                                                    [.NP [.AP [.A$'$ [.{A\degree\textsubscript{\lbrack{+N}\rbrack}} warm ] ] ]
+                                                                                         [.N$'$ [.{N\degree\textsubscript{\lbrack{3Pl}\rbrack}} socks ] ] ] ] ] ] ] ] ] ] ] ] ] ] ]
+
+}
+
+% For part Two D 1
+\resizebox{.5\linewidth}{!}{%
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 25pt}
+\Tree   [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{1}} ]
+                    [.TP    [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} Alex ] ] ]
+                            [.T$'$  [.{T\degree\textsubscript{\lbrack{3Sg, Fin}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                                    [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{3SgPast, Fin}\rbrack}} had ]
+                                                [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{EN/ED}\rbrack}} loved ]
+                                                            [.TP {??} [.T$'$ [.{T\degree} to ]
+                                                                        [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Bare}\rbrack}} wear ]
+                                                                                    [.NP [.AP [.A$'$ [.{A\degree\textsubscript{\lbrack{+N}\rbrack}} warm ] ] ]
+                                                                                         [.N$'$ [.{N\degree\textsubscript{\lbrack{3Pl}\rbrack}} socks ] ] ] ] ] ] ] ] ] ] ] ] ] ] ]
+
+}
+
+% For part Two D; 4 d structure
+\resizebox{.75\linewidth}{!}{%
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 25pt}
+\Tree   [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{1}} ]
+                    [.TP [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} Martin ] ] ]
+                         [.T$'$ [.{T\degree\textsubscript{\lbrack{Fin, 3Sg}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                                [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Fin}\rbrack}} would ]
+                                            [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Bare}\rbrack}} hate ]
+                                                        [.TP [.T$'$ [.{T\degree} to ]
+                                                                    [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Bare}\rbrack}} be ]
+                                                                                [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Pass}\rbrack}} rejected ]
+                                                                                            [.NP ?? ]
+                                                                                            [.PP [.P$'$ [.{P\degree} by ]
+                                                                                                        [.NP [.{D\textsubscript{\lbrack{+N}\rbrack}} the ]
+                                                                                                             [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} committee ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ]
+
+}
+
+% For part Two D; 4 s structure
+\resizebox{.75\linewidth}{!}{%
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 25pt}
+\Tree   [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{1}} ]
+                    [.TP [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} Martin ] ] ]
+                         [.T$'$ [.{T\degree\textsubscript{\lbrack{Fin, 3Sg}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                                [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Fin}\rbrack}} would ]
+                                            [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Bare}\rbrack}} hate ]
+                                                        [.TP [.{NP\textsubscript{i}} ?? ] [.T$'$ [.{T\degree} to ]
+                                                                    [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Bare}\rbrack}} be ]
+                                                                                [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Pass}\rbrack}} rejected ]
+                                                                                            {t\textsubscript{i}}
+                                                                                            [.PP [.P$'$ [.{P\degree} by ]
+                                                                                                        [.NP [.{D\textsubscript{\lbrack{+N}\rbrack}} the ]
+                                                                                                             [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} committee ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ]
+
+}
+
+
+% For part Two D 1 -- second analysis d structure
+%\resizebox{.5\linewidth}{!}{%
+\begin{tikzpicture}
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 25pt}
+\Tree   [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{1}} ]
+                    [.TP    [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} \node(x){Alex}; ] ] ]
+                            [.T$'$  [.{T\degree\textsubscript{\lbrack{3Sg, Fin}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                                    [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{3SgPast, Fin}\rbrack}} had ]
+                                                [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{EN/ED}\rbrack}} loved ]
+                                                            [.TP  [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} \node(y){Alex}; ] ] ] [.T$'$ [.{T\degree} to ]
+                                                                        [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Bare}\rbrack}} wear ]
+                                                                                    [.NP [.AP [.A$'$ [.{A\degree\textsubscript{\lbrack{+N}\rbrack}} warm ] ] ]
+                                                                                         [.N$'$ [.{N\degree\textsubscript{\lbrack{3Pl}\rbrack}} socks ] ] ] ] ] ] ] ] ] ] ] ] ] ] ]
+
+\draw[semithick,dashed, <->] (x) to [bend right=90] node [midway,fill=white] {\textsc{identical branches}} (y);
+
+\end{tikzpicture}
+
+% For part Two D 1 -- second analysis s structure
+\resizebox{.5\linewidth}{!}{%
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 25pt}
+\Tree   [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{1}} ]
+                    [.{TP\textsubscript{a}}    [.NP\textsubscript{$i$} [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} Alex ] ] ]
+                            [.T$'$  [.{T\degree\textsubscript{\lbrack{3Sg, Fin}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                                    [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{3SgPast, Fin}\rbrack}} had ]
+                                                [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{EN/ED}\rbrack}} loved ]
+                                                            [.{TP\textsubscript{b}}  {t\textsubscript{$i$}} [.T$'$ [.{T\degree} to ]
+                                                                        [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Bare}\rbrack}} wear ]
+                                                                                    [.NP [.AP [.A$'$ [.{A\degree\textsubscript{\lbrack{+N}\rbrack}} warm ] ] ]
+                                                                                         [.N$'$ [.{N\degree\textsubscript{\lbrack{3Pl}\rbrack}} socks ] ] ] ] ] ] ] ] ] ] ] ] ] ] ]
+
+}
+
+% For part Two D; 4 d structure -- second analysis
+\resizebox{.75\linewidth}{!}{%
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 25pt}
+\Tree   [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{1}} ]
+                    [.TP [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} Martin ] ] ]
+                         [.T$'$ [.{T\degree\textsubscript{\lbrack{Fin, 3Sg}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                                [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Fin}\rbrack}} would ]
+                                            [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Bare}\rbrack}} hate ]
+                                                        [.TP [.T$'$ [.{T\degree} to ]
+                                                                    [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Bare}\rbrack}} be ]
+                                                                                [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Pass}\rbrack}} rejected ]
+                                                                                            [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} Martin ] ] ]
+                                                                                            [.PP [.P$'$ [.{P\degree} by ]
+                                                                                                        [.NP [.{D\textsubscript{\lbrack{+N}\rbrack}} the ]
+                                                                                                             [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} committee ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ]
+
+}
+
+% For part Two D; 4 middle structure -- second analysis
+\begin{tikzpicture}
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 25pt}
+\Tree   [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{1}} ]
+                    [.{TP\textsubscript{a}} [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} \node(x) {Martin}; ] ] ]
+                         [.T$'$ [.{T\degree\textsubscript{\lbrack{Fin, 3Sg}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                                [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Fin}\rbrack}} would ]
+                                            [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Bare}\rbrack}} hate ]
+                                                        [.{TP\textsubscript{b}} [.{NP\textsubscript{$i$}} [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} \node(y) {Martin}; ] ] ] [.T$'$ [.{T\degree} to ]
+                                                                    [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Bare}\rbrack}} be ]
+                                                                                [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Pass}\rbrack}} rejected ]
+                                                                                            {t\textsubscript{$i$}}
+                                                                                            [.PP [.P$'$ [.{P\degree} by ]
+                                                                                                        [.NP [.{D\textsubscript{\lbrack{+N}\rbrack}} the ]
+                                                                                                             [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} committee ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ]
+
+\draw[semithick,dashed, <->] (x) to [bend right=90] node [midway,fill=white] {\textsc{identical branches}} (y);
+\end{tikzpicture}
+
+% For part Two D; 4 s structure -- second analysis
+\resizebox{.75\linewidth}{!}{%
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 25pt}
+\Tree   [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{1}} ]
+                    [.{TP\textsubscript{a}} [.{NP\textsubscript{$i$}} [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} Martin ] ] ]
+                         [.T$'$ [.{T\degree\textsubscript{\lbrack{Fin, 3Sg}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                                [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Fin}\rbrack}} would ]
+                                            [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Bare}\rbrack}} hate ]
+                                                        [.{TP\textsubscript{b}} {t\textsubscript{$i$}} [.T$'$ [.{T\degree} to ]
+                                                                    [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Bare}\rbrack}} be ]
+                                                                                [.{VP\textsubscript{a}} [.V$'$ [.{V\degree\textsubscript{\lbrack{Pass}\rbrack}} rejected ]
+                                                                                            {t\textsubscript{$i$}}
+                                                                                            [.PP [.P$'$ [.{P\degree} by ]
+                                                                                                        [.NP [.{D\textsubscript{\lbrack{+N}\rbrack}} the ]
+                                                                                                             [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} committee ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ]
+
+}
+%\end{landscape}
+\end{document}

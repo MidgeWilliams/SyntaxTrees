@@ -1,0 +1,66 @@
+\documentclass{article}
+\usepackage{tikz-qtree,textcomp,gensymb,amssymb,pdflscape}
+\usepackage[margin=0.5in]{geometry}
+\begin{document}
+\begin{landscape}
+
+\setlength{\parindent}{0cm}
+\pagestyle{empty}
+
+% For Part 1 0 D Structure
+\resizebox{\textheight}{!}{%
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 40pt}
+\Tree   [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{1}} ]
+                    [.TP [.T$'$ [.{T\degree\textsubscript{\lbrack{3Sg, Fin}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                                [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{3SgPast, Fin}\rbrack}} had ]
+                                            [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{EN/ED}\rbrack}} been ]
+                                                        [.VP [.VP [.V$'$    [.{V\degree\textsubscript{\lbrack{Pass}\rbrack}} inserted ]
+                                                                            [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{WH}\rbrack}} what ] ] ]
+                                                                            [.PP [.P$'$ [.{P\degree} into ]
+                                                                                        [.NP [.NP [.{D\textsubscript{\lbrack{+N}\rbrack}} those ]
+                                                                                                  [.N$'$ [.{N\degree\textsubscript{\lbrack{3Pl}\rbrack}} envelopes ] ] ]
+                                                                                             [.PP [.P$'$ [.{P\degree} from ]
+                                                                                                         [.NP [.{D\textsubscript{\lbrack{+N}\rbrack}} the ]
+                                                                                                              [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} {stationary store} ] ] ] ] ] ] ] ]
+                                                                            [.PP [.P$'$ [.{P\degree} by ]
+                                                                                        [.NP [.PosP [.NP [.{D\textsubscript{\lbrack{+N}\rbrack}} a ]
+                                                                                                         [.N$'$ [.{N\degree\textsubscript{\lbrack{+Pos, 3Sg}\rbrack}} student ] ] ]
+                                                                                                    [.Pos$'$ [.{Pos\degree\textsubscript{\lbrack{+N}\rbrack}} {'s} ] ] ]
+                                                                                             [.N$'$ [.{N\degree\textsubscript{\lbrack3Sg\rbrack}} boss ] ] ] ] ] ] ]
+                                                             [.PP [.P$'$ [.{P\degree} during ]
+                                                                         [.NP [.{D\textsubscript{\lbrack{+N}\rbrack}} the ]
+                                                                              [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} meeting ] ] ] ] ] ] ] ] ] ] ] ] ] ]
+
+}
+
+% For Part 1 0 S Structure
+\resizebox{\textheight}{!}{%
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 40pt}
+\Tree   [.CP [.{NP\textsubscript{i}} [.N$'$ [.{N\degree\textsubscript{\lbrack{WH}\rbrack}} what ] ] ] [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{1}} ]
+                    [.TP {t\textsubscript{i}}
+                        [.T$'$ [.{T\degree\textsubscript{\lbrack{3Sg, Fin}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                                [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{3SgPast, Fin}\rbrack}} had ]
+                                            [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{EN/ED}\rbrack}} been ]
+                                                        [.VP [.VP [.V$'$    [.{V\degree\textsubscript{\lbrack{Pass}\rbrack}} inserted ]
+                                                                            {t\textsubscript{i}}
+                                                                            [.PP [.P$'$ [.{P\degree} into ]
+                                                                                        [.NP [.NP [.{D\textsubscript{\lbrack{+N}\rbrack}} those ]
+                                                                                                  [.N$'$ [.{N\degree\textsubscript{\lbrack{3Pl}\rbrack}} envelopes ] ] ]
+                                                                                             [.PP [.P$'$ [.{P\degree} from ]
+                                                                                                         [.NP [.{D\textsubscript{\lbrack{+N}\rbrack}} the ]
+                                                                                                              [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} {stationary store} ] ] ] ] ] ] ] ]
+                                                                            [.PP [.P$'$ [.{P\degree} by ]
+                                                                                        [.NP [.PosP [.NP [.{D\textsubscript{\lbrack{+N}\rbrack}} a ]
+                                                                                                         [.N$'$ [.{N\degree\textsubscript{\lbrack{+Pos, 3Sg}\rbrack}} student ] ] ]
+                                                                                                    [.Pos$'$ [.{Pos\degree\textsubscript{\lbrack{+N}\rbrack}} {'s} ] ] ]
+                                                                                             [.N$'$ [.{N\degree\textsubscript{\lbrack3Sg\rbrack}} boss ] ] ] ] ] ] ]
+                                                             [.PP [.P$'$ [.{P\degree} during ]
+                                                                         [.NP [.{D\textsubscript{\lbrack{+N}\rbrack}} the ]
+                                                                              [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} meeting ] ] ] ] ] ] ] ] ] ] ] ] ] ]
+
+}
+
+\end{landscape}
+\end{document}
