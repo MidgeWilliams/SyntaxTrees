@@ -1,0 +1,65 @@
+\documentclass{article}
+\usepackage{tikz-qtree,textcomp,gensymb,amssymb,pdflscape}
+\usetikzlibrary{decorations.text}
+\usepackage[margin=0.5in]{geometry}
+\begin{document}
+%\begin{landscape}
+
+\setlength{\parindent}{0cm}
+\pagestyle{empty}
+
+% For Part Two A
+\resizebox{.5\linewidth}{!}{%
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 25pt}
+\Tree   [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{1}} ]
+                    [.TP [.{NP\textsubscript{$i$}} [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} everyone ] ] ]
+                         [.T$'$ [.{T\degree\textsubscript{\lbrack{3Sg, Fin}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                                [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{3SgPres, Fin}\rbrack}} likes ]
+        [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{3}} ]
+                    [.TP [.{NP\textsubscript{$i$}} [.N$'$ [.{N\degree} PRO ] ] ]
+                         [.T$'$ [.{T\degree} to ]
+                                [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Bare}\rbrack}} see ]
+                                            [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} Lynn ] ] ] ] ] ] ] ] ] ] ] ] ] ] ]
+
+}
+
+% For part Two D 1
+\resizebox{.5\linewidth}{!}{%
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 25pt}
+\Tree   [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{1}} ]
+                    [.TP [.{NP\textsubscript{$i$}} [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} Lynn ] ] ]
+                         [.T$'$ [.{T\degree\textsubscript{\lbrack{3Sg, Fin}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                                [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{3SgPres, Fin}\rbrack}} likes ]
+        [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{3}} ]
+                    [.TP  [.T$'$ [.{T\degree} to ]
+                                    [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Bare}\rbrack}} be ]
+                                                [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Pass}\rbrack}} seen ]
+                                                            [.{NP\textsubscript{$i$}} [.N$'$ [.{N\degree} PRO ] ] ]
+                                                            [.PP [.P$'$ [.{P\degree} by ]
+                                                                    [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} everyone ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ]
+
+}
+
+% For part Two D; 4 d structure
+\resizebox{.5\linewidth}{!}{%
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 25pt}
+\Tree   [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{1}} ]
+                    [.TP [.{NP\textsubscript{$i$}} [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} Lynn ] ] ]
+                         [.T$'$ [.{T\degree\textsubscript{\lbrack{3Sg, Fin}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                                [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{3SgPres, Fin}\rbrack}} likes ]
+        [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{3}} ]
+                    [.TP [.{NP\textsubscript{$i$}} [.N$'$ [.{N\degree} PRO ] ] ] [.T$'$ [.{T\degree} to ]
+                                    [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Bare}\rbrack}} be ]
+                                                [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Pass}\rbrack}} seen ]
+                                                            {t\textsubscript{$i$}}
+                                                            [.PP [.P$'$ [.{P\degree} by ]
+                                                                    [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} everyone ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ]
+
+}
+
+
+%\end{landscape}
+\end{document}

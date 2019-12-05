@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage{tikz-qtree,textcomp,gensymb,amssymb,pdflscape}
+\usepackage[margin=0.5in]{geometry}
+\begin{document}
+\begin{landscape}
+
+\setlength{\parindent}{0cm}
+\pagestyle{empty}
+
+
+
+% For Part 1 0 S Structure
+\resizebox{\textheight}{!}{
+
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 40pt}
+\Tree   [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{1}} ]
+                    [.TP    [.NP [.NP [.D a ]
+                                      [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} neighbor ] ] ]
+                                 [.PP [.P$'$ [.{P\degree} from ]
+                                             [.PP [.P$'$ [.{P\degree} out ]
+                                                         [.PP [.P$'$ [.{P\degree} by ]
+                                                                     [.NP [.D the ]
+                                                                          [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} library ] ] ] ] ] ] ] ] ] ]
+                            [.T$'$  [.{T\degree\textsubscript{\lbrack{3Sg, Fin}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                                    [. VP [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{3SgPast, Fin}\rbrack}} sent ]
+                                                        [.NP [.D a ] [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} letter ]
+                                                                            [.PP [.P$'$ [.{P\degree} about ]
+                                                                                        [.NP [.D the ]
+                                                                                             [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} importance ]
+                                                                                                    [.PP [.P$'$ [.{P\degree} of ]
+                                                                                                            [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} voting ] ] ] ] ] ] ] ] ] ] ]
+                                                        [.PP [.P$'$ [.{P\degree} to ] [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{1Pl}\rbrack}} us ] ] ] ] ] ] ]
+                                          [.PP [.PD just ]
+                                               [.P$'$ [.{P\degree} after ]
+                                                      [.NP  [.D the ]
+                                                            [.N$'$  [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} end ]
+                                                                    [.PP [.P$'$ [.{P\degree} of ]
+                                                                                [.NP [.D the ]
+                                                                                     [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} {holiday dinner} ] ] ] ] ] ] ] ] ] ] ] ] ]
+
+}
+
+\end{landscape}
+\end{document}
