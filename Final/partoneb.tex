@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage{tikz-qtree,textcomp,gensymb,amssymb,pdflscape}
+\usepackage[margin=0.5in]{geometry}
+\begin{document}
+\begin{landscape}
+
+\setlength{\parindent}{0cm}
+\pagestyle{empty}
+
+% For Part 1, 0b D Structure
+\resizebox{\textheight}{!}{%}{\dimexpr\textheight-2\baselineskip\relax}{%
+
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 30pt}
+\Tree  [.CP [.C$'$  [.{C\degree} {$\varnothing$\textsubscript{1}} ]
+                    [.TP    [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} Henry ] ] ]
+                            [.T$'$  [.{T\degree\textsubscript{\lbrack{3Sg, Fin}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                                    [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{3SgPres, Fin}\rbrack}} is ]
+                                                [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{ING}\rbrack}} mentioning ]
+                                                            [.PP [.P$'$ [.{P\degree} to ]
+                                                                        [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{1Pl}\rbrack}} us ] ] ] ] ]
+            [.CP [.C$'$ [.{C\degree} that ]
+                        [.TP [.NP [.D fourteen ]
+                                    [.N$'$ [.{N\degree\textsubscript{\lbrack{3Pl}\rbrack}} sticks ]
+                                            [.PP [.P$'$ [.{P\degree} of ]
+                                                    [.NP [.AP [.A$'$ [.{A\degree} Irish ] ] ]
+                                                        [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} butter ] ] ] ] ] ] ]
+                               [.T$'$ [.{T\degree\textsubscript{\lbrack{3Sg, Fin}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                                      [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{3SgPast, Fin}\rbrack}} melted ]
+                                                    [.PP [.P$'$ [.{P\degree} onto ]
+                                                                [.NP [.NP [.D a ] [.AP [.A$'$ [.{A\degree} plastic ] ] ]
+                                                                            [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} counter ] ] ]
+                                                                     [.PP [.PD right ] [.P$'$ [.{P\degree} over ]
+                                                                                        [.PP [.P$'$ [.{P\degree} near ]
+                                                                                                    [.NP [.D the ]
+                                                                                                        [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} refrigerator ]]]]]]]]]]]]]]]]]]]]]]]]
+
+}
+
+% For Part 1, 0b S Structure
+\resizebox{\textheight}{!}{%}{\dimexpr\textheight-2\baselineskip\relax}{%
+
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 30pt}
+\Tree  [.CP [.C$'$  [.{C\degree} [.{V\degree\textsubscript{\lbrack{3SgPres, Fin}\rbrack$i$}} is ] ]
+                    [.TP    [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} Henry ] ] ]
+                            [.T$'$  [.{T\degree\textsubscript{\lbrack{3Sg, Fin}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                                    [.VP [.V$'$ {t\textsubscript{$i$}}
+                                                [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{ING}\rbrack}} mentioning ]
+                                                            [.PP [.P$'$ [.{P\degree} to ]
+                                                                        [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{1Pl}\rbrack}} us ] ] ] ] ]
+            [.CP [.C$'$ [.{C\degree} that ]
+                        [.TP [.NP [.D fourteen ]
+                                    [.N$'$ [.{N\degree\textsubscript{\lbrack{3Pl}\rbrack}} sticks ]
+                                            [.PP [.P$'$ [.{P\degree} of ]
+                                                    [.NP [.AP [.A$'$ [.{A\degree} Irish ] ] ]
+                                                        [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} butter ] ] ] ] ] ] ]
+                               [.T$'$ [.{T\degree\textsubscript{\lbrack{3Sg, Fin}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                                      [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{3SgPast, Fin}\rbrack}} melted ]
+                                                    [.PP [.P$'$ [.{P\degree} onto ]
+                                                                [.NP [.NP [.D a ] [.AP [.A$'$ [.{A\degree} plastic ] ] ]
+                                                                            [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} counter ] ] ]
+                                                                     [.PP [.PD right ] [.P$'$ [.{P\degree} over ]
+                                                                                        [.PP [.P$'$ [.{P\degree} near ]
+                                                                                                    [.NP [.D the ]
+                                                                                                        [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} refrigerator ]]]]]]]]]]]]]]]]]]]]]]]]
+
+}
+
+\end{landscape}
+\end{document}
