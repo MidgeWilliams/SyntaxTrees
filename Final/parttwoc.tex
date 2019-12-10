@@ -1,0 +1,95 @@
+\documentclass{article}
+\usepackage{tikz-qtree,textcomp,gensymb,amssymb,pdflscape}
+\usepackage[margin=0.5in]{geometry}
+\begin{document}
+%\begin{landscape}
+
+\setlength{\parindent}{0cm}
+\pagestyle{empty}
+
+
+\resizebox{.5\linewidth}{!}{%}{\dimexpr\textheight-2\baselineskip\relax}{%
+% Everyone persuaded Tom to interview her
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 30pt}
+
+\Tree  [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{1}} ]
+                 [.TP [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} Everyone ] ] ]
+                      [.T$'$ [.{T\degree\textsubscript{\lbrack{3Sg, Fin}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                            [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{3SgPast, Fin}\rbrack}} persuaded ]
+                                        [.{NP\textsubscript{$i$}} [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} Tom ] ] ]
+                                        [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{3}} ]
+                                                         [.TP [.NP [.N$'$ [.{N\degree} {PRO\textsubscript{$i$}} ] ] ]
+                                                              [.T$'$ [.{T\degree} to ]
+                                                                    [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Bare}\rbrack}} interview ]
+                                                                                [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} her ]]]]]]]]]]]]]]]
+
+}
+
+\resizebox{.5\linewidth}{!}{%}{\dimexpr\textheight-2\baselineskip\relax}{%
+% Everyone persuaded her to be interviewed by Tom
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 30pt}
+
+\Tree  [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{1}} ]
+                 [.TP [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} Everyone ] ] ]
+                      [.T$'$ [.{T\degree\textsubscript{\lbrack{3Sg, Fin}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                            [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{3SgPast, Fin}\rbrack}} persuaded ]
+                                        [.{NP\textsubscript{$i$}} [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} her ] ] ]
+                                        [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{3}} ]
+                                                         [.TP
+                                                              [.T$'$ [.{T\degree} to ]
+                                                                    [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Bare}\rbrack}} be ]
+                                                                                [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Pass}\rbrack}} interviewed ]
+                                                                                    [.NP [.N$'$ [.{N\degree} {PRO\textsubscript{$i$}} ] ] ]
+                                                                                    [.PP [.P$'$ [.{P\degree} by ]
+                                                                                                [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} Tom ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ]
+
+}
+
+\resizebox{.5\linewidth}{!}{%}{\dimexpr\textheight-2\baselineskip\relax}{%
+% Everyone persuaded her to be interviewed by Tom
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 30pt}
+
+\Tree  [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{1}} ]
+                 [.TP [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} Everyone ] ] ]
+                      [.T$'$ [.{T\degree\textsubscript{\lbrack{3Sg, Fin}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                            [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{3SgPast, Fin}\rbrack}} persuaded ]
+                                        [.{NP\textsubscript{$i$}} [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} her ] ] ]
+                                        [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{3}} ]
+                                                         [.TP [.NP [.N$'$ [.{N\degree} {PRO\textsubscript{$i$}} ] ] ]
+                                                              [.T$'$ [.{T\degree} to ]
+                                                                    [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Bare}\rbrack}} be ]
+                                                                                [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Pass}\rbrack}} interviewed ]
+                                                                                    {t\textsubscript{$i$}}
+                                                                                    [.PP [.P$'$ [.{P\degree} by ]
+                                                                                                [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} Tom ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ]
+
+}
+
+\resizebox{.5\linewidth}{!}{%}{\dimexpr\textheight-2\baselineskip\relax}{%
+% Margaret convinced me that he left the party
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 30pt}
+
+\Tree  [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{1}} ]
+                 [.TP [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} Margaret ] ] ]
+                      [.T$'$ [.{T\degree\textsubscript{\lbrack{3Sg, Fin}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                            [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{3SgPast, Fin}\rbrack}} convinced ]
+                                        [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{1Sg}\rbrack}} me ] ] ]
+                                        [.CP [.C$'$ [.{C\degree} that ]
+                                                         [.TP [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} he ] ] ]
+                                                              [.T$'$ [.{T\degree\textsubscript{\lbrack{3Sg, Fin}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                                                                    [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{3SgPast, Fin}\rbrack}} left ]
+                                                                                [.NP [.D the ] [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} party ] ] ] ] ]]]]]]]]]]]
+
+}
+
+\Tree  [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{1}} ]
+                 [.TP [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{}\rbrack}} SUBJ ] ] ]
+                      [.T$'$ [.{T\degree\textsubscript{\lbrack{}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                            [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{}\rbrack}} VERB ]]]]]]]
+
+%\end{landscape}
+\end{document}
