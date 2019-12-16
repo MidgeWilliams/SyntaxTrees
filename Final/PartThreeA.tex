@@ -1,0 +1,178 @@
+\documentclass{article}
+\usepackage{tikz-qtree,textcomp,gensymb,amssymb,pdflscape}
+\usepackage[margin=0.5in]{geometry}
+\usetikzlibrary{decorations.text}
+\begin{document}
+%\begin{landscape}
+
+\setlength{\parindent}{0cm}
+\pagestyle{empty}
+
+
+\resizebox{.25\linewidth}{!}{%}{\dimexpr\textheight-2\baselineskip\relax}{%
+% Henry will have left by noon
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 30pt}
+
+\Tree  [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{1}} ]
+                 [.TP [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} Henry ] ] ]
+                      [.T$'$ [.{T\degree\textsubscript{\lbrack{Fin}\rbrack}} will ]
+                            [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Bare}\rbrack}} {have} ]
+                                        [.VP [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{EN/ED}\rbrack}} left ] ] ]
+                                            [.PP [.P$'$ [.{P\degree} by ]
+                                                        [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} noon ]]]]]]]]]]]]
+
+
+}
+
+\resizebox{.25\linewidth}{!}{%}{\dimexpr\textheight-2\baselineskip\relax}{%
+% Will henry have left by noon
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 30pt}
+
+\Tree  [.CP [.C$'$ [.{C\degree} [.{T\degree\textsubscript{\lbrack{Fin}\rbrack$i$}} will ] ]
+                 [.TP [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} Henry ] ] ]
+                      [.T$'$ {t\textsubscript{$i$}}
+                            [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Bare}\rbrack}} have ]
+                                        [.VP [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{EN/ED}\rbrack}} left ] ] ]
+                                            [.PP [.P$'$ [.{P\degree} by ]
+                                                        [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} noon ]]]]]]]]]]]]
+
+
+}
+
+\begin {tikzpicture}
+% Have henry will left by noon
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 30pt}
+
+\Tree  [.CP [.C$'$ [.{C\degree} \node(x){$\varnothing$\textsubscript{1}}; ]
+                 [.TP [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} Henry ] ] ]
+                      [.T$'$ [.{T\degree\textsubscript{\lbrack{Fin}\rbrack}} will ]
+                            [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Bare}\rbrack}} \node(y){have}; ]
+                                        [.VP [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{EN/ED}\rbrack}} left ] ] ]
+                                            [.PP [.P$'$ [.{P\degree} by ]
+                                                        [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} noon ]]]]]]]]]]]]
+
+
+% \draw[semithick,dashed, <-] (x.south) to [bend right=70] (y.west);
+\draw[semithick,dashed, <-] (x)..controls +(south west:3) and +(south west:3)..(y);
+\end {tikzpicture}
+
+\resizebox{.5\linewidth}{!}{%}{\dimexpr\textheight-2\baselineskip\relax}{%
+% Has Margaret been fixing the car?
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 30pt}
+
+\Tree  [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{1}} ]
+                 [.TP [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} Margaret ] ] ]
+                      [.T$'$ [.{T\degree\textsubscript{\lbrack{3Sg, Fin}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                            [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{3SgPres, Fin}\rbrack}} {has} ]
+                                        [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{EN/ED}\rbrack}} been ]
+                                                    [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{ING}\rbrack}} fixing ]
+                                                                [.NP [.D the ] [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} car ] ] ] ]] ]
+                                            ]]]]]]]
+
+
+}
+\resizebox{.5\linewidth}{!}{%}{\dimexpr\textheight-2\baselineskip\relax}{%
+% Has Margaret been fixing the car?
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 30pt}
+
+\Tree  [.CP [.C$'$ [.{C\degree} [.{V\degree\textsubscript{\lbrack{3SgPres, Fin}\rbrack$i$}} {has} ] ]
+                 [.TP [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} Margaret ] ] ]
+                      [.T$'$ [.{T\degree\textsubscript{\lbrack{3Sg, Fin}\rbrack}} {t\textsubscript{$i$}} ]
+                            [.VP [.V$'$ {t\textsubscript{$i$}}
+                                        [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{EN/ED}\rbrack}} been ]
+                                                    [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{ING}\rbrack}} fixing ]
+                                                                [.NP [.D the ] [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} car ] ] ] ]] ]
+                                            ]]]]]]]
+
+
+}
+
+\resizebox{.4\linewidth}{!}{%}{\dimexpr\textheight-2\baselineskip\relax}{%
+% Margaret is tall
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 30pt}
+
+\Tree  [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{1}} ]
+                 [.TP [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} Margaret ] ] ]
+                      [.T$'$ [.{T\degree\textsubscript{\lbrack{3Sg, Fin}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                            [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{3SgPres, Fin}\rbrack}} {is} ]
+                                        [.AP [.A$'$ [.{A\degree} tall ]]]]]]]]]
+
+
+
+}
+
+\resizebox{.4\linewidth}{!}{%}{\dimexpr\textheight-2\baselineskip\relax}{%
+% Margaret is tall
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 30pt}
+
+\Tree  [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{1}} ]
+                 [.TP [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} Margaret ] ] ]
+                      [.T$'$ [.{T\degree\textsubscript{\lbrack{3Sg, Fin}\rbrack}} [.{V\degree\textsubscript{\lbrack{3SgPres, Fin}\rbrack$i$}} {is} ] ]
+                            [.VP [.V$'$ {t\textsubscript{$i$}}
+                                        [.AP [.A$'$ [.{A\degree} tall ]]]]]]]]]
+
+
+
+}
+
+\resizebox{.35\linewidth}{!}{%}{\dimexpr\textheight-2\baselineskip\relax}{%
+% is Margaret tall
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 30pt}
+
+\Tree  [.CP [.C$'$ [.{C\degree} [.{V\degree\textsubscript{\lbrack{3SgPres, Fin}\rbrack$i$}} {is} ] ]
+                 [.TP [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} Margaret ] ] ]
+                      [.T$'$ [.{T\degree\textsubscript{\lbrack{3Sg, Fin}\rbrack}} {t\textsubscript{$i$}} ]
+                            [.VP [.V$'$ {t\textsubscript{$i$}}
+                                        [.AP [.A$'$ [.{A\degree} tall ]]]]]]]]]
+
+
+
+}
+
+\resizebox{.4\linewidth}{!}{%}{\dimexpr\textheight-2\baselineskip\relax}{%
+% were they being very annoying
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 30pt}
+
+\Tree  [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{1}} ]
+                 [.TP [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Pl}\rbrack}} They ] ] ]
+                      [.T$'$ [.{T\degree\textsubscript{\lbrack{3Sg, Fin}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                            [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{3PlPast, Fin}\rbrack}} {were} ]
+                                        [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{ING}\rbrack}} being ]
+                                                    [.AP [.Deg very ] [.A$'$ [.{A\degree} annoying ]]]]]]]]]]]
+
+
+
+}
+
+\resizebox{.4\linewidth}{!}{%}{\dimexpr\textheight-2\baselineskip\relax}{%
+% were they being very annoying
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 30pt}
+
+\Tree  [.CP [.C$'$ [.{C\degree} [.{V\degree\textsubscript{\lbrack{3PlPast, Fin}\rbrack$i$}} {were} ] ]
+                 [.TP [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Pl}\rbrack}} They ] ] ]
+                      [.T$'$ [.{T\degree\textsubscript{\lbrack{3Sg, Fin}\rbrack}} {t\textsubscript{$i$}} ]
+                            [.VP [.V$'$ {t\textsubscript{$i$}}
+                                        [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{ING}\rbrack}} being ]
+                                                    [.AP [.Deg very ] [.A$'$ [.{A\degree} annoying ]]]]]]]]]]]
+
+
+
+}
+
+\Tree  [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{1}} ]
+                 [.TP [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{}\rbrack}} SUBJ ] ] ]
+                      [.T$'$ [.{T\degree\textsubscript{\lbrack{}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                            [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{}\rbrack}} VERB ]]]]]]]
+
+%\end{landscape}
+\end{document}

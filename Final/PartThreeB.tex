@@ -1,0 +1,101 @@
+\documentclass{article}
+\usepackage{tikz-qtree,textcomp,gensymb,amssymb,pdflscape}
+\usepackage[margin=0.5in]{geometry}
+\usetikzlibrary{decorations.text}
+\begin{document}
+%\begin{landscape}
+
+\setlength{\parindent}{0cm}
+\pagestyle{empty}
+
+
+\resizebox{.25\linewidth}{!}{%}{\dimexpr\textheight-2\baselineskip\relax}{%
+% She likes fish
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 30pt}
+
+\Tree  [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{1}} ]
+                 [.TP [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} she ] ] ]
+                      [.T$'$ [.{T\degree\textsubscript{\lbrack{3Sg, Fin}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                            [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{3SgPres, Fin}\rbrack}} likes ]
+                                        [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} fish ] ] ] ]]]]]]
+
+
+}
+
+\resizebox{.25\linewidth}{!}{%}{\dimexpr\textheight-2\baselineskip\relax}{%
+% She does likes fish
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 30pt}
+
+\Tree  [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{1}} ]
+                 [.TP [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} she ] ] ]
+                      [.T$'$ [.{T\degree} [.{V\textsubscript{\lbrack{3SgPres, Fin}\rbrack}} does ]]
+                            [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Bare}\rbrack}} like ]
+                                        [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} fish ] ] ] ]]]]]]
+
+
+}
+
+\resizebox{.25\linewidth}{!}{%}{\dimexpr\textheight-2\baselineskip\relax}{%
+% does she likes fish
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 30pt}
+
+\Tree  [.CP [.C$'$ [.{C\degree} [.{T\degree\textsubscript{$i$}} [.{V\textsubscript{\lbrack{3SgPres, Fin}\rbrack}} does ]]]
+                 [.TP [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} she ] ] ]
+                      [.T$'$ {t\textsubscript{$i$}}
+                            [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Bare}\rbrack}} like ]
+                                        [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg}\rbrack}} fish ] ] ] ]]]]]]
+
+
+}
+
+\resizebox{.5\linewidth}{!}{%}{\dimexpr\textheight-2\baselineskip\relax}{%
+% They wanted to be interviewed by who
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 30pt}
+
+\Tree  [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{1}} ]
+                 [.TP [.{NP\textsubscript{$i$}} [.N$'$ [.{N\degree\textsubscript{\lbrack{3Pl}\rbrack}} they ] ] ]
+                      [.T$'$ [.{T\degree\textsubscript{\lbrack{3Pl, Fin}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                            [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{3PlPast, Fin}\rbrack}} wanted ]
+                            [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{3}} ]
+                                             [.TP
+                                                  [.T$'$ [.{T\degree} to ]
+                                                        [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Bare}\rbrack}} be ]
+                                                                    [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Pass}\rbrack}} interviewed ]
+                                                                                [.NP [.N$'$ [.{N\degree} {PRO\textsubscript{$i$}} ] ] ]
+                                                                                [.PP [.P$'$ [.{P\degree} by ] [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg, WH}\rbrack}} who ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ]
+
+
+}
+
+\resizebox{.5\linewidth}{!}{%}{\dimexpr\textheight-2\baselineskip\relax}{%
+% who did they want to be interviewed by
+\tikzstyle{every node} = [font=\large]
+\tikzset{every tree node/.style={align=center,anchor=base}, sibling distance = 0pt, level distance = 30pt}
+
+\Tree  [.CP [.{NP\textsubscript{$k$}} [.N$'$ [.{N\degree\textsubscript{\lbrack{3Sg, WH}\rbrack}} who ] ] ]
+                [.C$'$ [.{C\degree} [.{T\degree\textsubscript{$j$}} [.{V\textsubscript{\lbrack{3PlPast, Fin}\rbrack}} did ] ] ]
+                [.TP [.{NP\textsubscript{$i$}} [.N$'$ [.{N\degree\textsubscript{\lbrack{3Pl}\rbrack}} they ] ] ]
+                      [.T$'$ {t\textsubscript{$j$}}
+                            [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Bare}\rbrack}} want ]
+                            [.CP {t\textsubscript{$k$}} [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{3}} ]
+                                             [.TP [.NP [.N$'$ [.{N\degree} {PRO\textsubscript{$i$}} ] ] ]
+                                                  [.T$'$ [.{T\degree} to ]
+                                                        [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Bare}\rbrack}} be ]
+                                                                    [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{Pass}\rbrack}} interviewed ]
+                                                                                {t\textsubscript{$i$}}
+                                                                                [.PP [.P$'$ [.{P\degree} by ] {t\textsubscript{$k$}} ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ]
+
+
+}
+
+\Tree  [.CP [.C$'$ [.{C\degree} {$\varnothing$\textsubscript{1}} ]
+                 [.TP [.NP [.N$'$ [.{N\degree\textsubscript{\lbrack{}\rbrack}} SUBJ ] ] ]
+                      [.T$'$ [.{T\degree\textsubscript{\lbrack{}\rbrack}} {$\varnothing$\textsubscript{2}} ]
+                            [.VP [.V$'$ [.{V\degree\textsubscript{\lbrack{}\rbrack}} VERB ]]]]]]]
+
+%\end{landscape}
+\end{document}
